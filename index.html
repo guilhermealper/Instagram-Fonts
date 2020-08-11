@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Fonts</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Calibri" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+    <script>
+        function getText() {
+          let txt = document.getElementById("text").value;
+          console.log(txt);
+          document.getElementById("newText1").innerHTML = txt;
+          document.getElementById("newText2").innerHTML = txt;
+          document.getElementById("newText3").innerHTML = txt;
+          document.getElementById("newText4").innerHTML = txt;
+          document.getElementById("newText5").innerHTML = txt;
+          document.getElementById("newText6").innerHTML = txt;
+          document.getElementById("newText7").innerHTML = txt;
+        }
+      </script>
+    <style>
+     *{
+         font-family: Calibri;
+         color: #000077
+     }   
+    </style>
+</head>
+<body>
+    <h1>Digite aqui o texto para legendas do Instagram!</h1>
+    <input type="text" name="text" id="text">
+    <label for="text">Texto</label>
+    <button onclick="getText()">Atualizar</button>
+
+
+    <h2>NEGRITO</h2>
+    <h3 id="newText1" style="font-weight: bold; color:#000;"></h3>
+
+    <h2>ITÁLICO</h2>
+    <h3 id="newText2"style="font-style: italic; color:#000;"></h3>
+
+    <h2>NEGRITO E ITÁLICO</h2>
+    <h3 id="newText3" style="font-weight: bold; font-stretch: italic; color:#000;"></h3>
+
+    <h2>FONTE GRANDE</h2>
+    <h2 id="newText4"  style=" color:#000;"></h2>
+
+    <h2>FONTE GRANDE E NEGRITO</h2>
+    <h2 id="newText5" style="font-weight: bold; color:#000;"></h2>
+
+    <h2>UBUNTU</h2>
+    <h3 id="newText6" style="font-family: Ubuntu; color:#000;"></h3>
+
+    <h2>UBUNTO E NEGRITO</h2>
+    <h3 id="newText7" style="font-family: Ubuntu; font-weight: bold; color:#000;"></h3>
+</body>
+</html>
